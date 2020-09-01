@@ -1,38 +1,118 @@
-.App {
+
+.square {
+  background: white;
+  border: 3px solid black;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
   text-align: center;
+  line-height: 80px;
+  width: 130px;
+  height: 130px;
+  display: inline-block;
+ }
+
+.square:first-child,.square:nth-child(2),.square:nth-child(3){
+   border-top: none;
+ }
+.square:nth-child(3n+1){
+  border-left: none;
+}
+.square:nth-child(3n+3){
+  border-right: none;
+}
+.square:last-child,.square:nth-child(7),.square:nth-child(8){
+  border-bottom:none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ /* Board */
+.box{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3,auto);
+  display: grid;
+  
+ }
+ 
+ 
+ /* Game */
+.game-board {
+  position: absolute;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;  
+  
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .winner-message{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,.9);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .winner-display{
+   color: white;
+   font-size: 70px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+   position: relative;
+ }
+
+ .restart{
+   height: 50px;
+   width: 150px;
+   background-color: white;
+   border-radius: 5px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 20px;
+  
+ }
+
+ button:focus{
+   outline: none;
+ }
+
+ .restart:focus{
+   outline: none;
+ }
+
+ .status-display{
+  color: black;
+  font-weight: bold;
+  width: 500px;
+  font-size: 30px;
+  margin-left: 75%;
+  margin-top: 5%;
+ }
+
+ .restart:hover{
+   cursor: pointer;
+   background-color: black;
+   color: white;
+   border: solid 2px white;
+ }
+
+
+
+
+
+
+
