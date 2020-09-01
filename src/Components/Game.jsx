@@ -67,7 +67,21 @@ export default class Game extends Component {
                     </div>
                 </div>        
             )
-        } else {
+        } else  if(this.state.stepNumber === 9){
+            
+            return (
+                <div className="game">
+                    <div className="game-board">
+                        <Board onClick={(i) => this.handleClick(i)}
+                            squares={current.squares}  />
+                    </div>
+                    <div className="status-display">
+                    <div><p><button className="restart" onClick={()=>this.handleClear()}>Restart</button></p></div>
+                    </div>  
+                </div>          
+            )
+        }
+        else{
             status = 'Next Player : ' + (this.state.xIsNext ? 'X' : 'O');
             return (
                 <div className="game">
@@ -81,6 +95,8 @@ export default class Game extends Component {
                 </div>      
                 
             )
+
+
         }
 
 
