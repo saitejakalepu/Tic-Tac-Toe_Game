@@ -10,7 +10,7 @@ git commit -m "initial-commit"
 
 git add .
 
-git remote add origin https://github.com/saitejababu/ToDoList-React-App.git
+git remote add origin https://github.com/saitejababu/Tic-Tac-Toe_Game.git
 
 npm run deploy
 
