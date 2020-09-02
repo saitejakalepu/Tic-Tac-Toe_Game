@@ -15,4 +15,4 @@ git remote add origin https://github.com/saitejababu/Tic-Tac-Toe_Game.git
 npm run deploy
 
 ## Published at:
-https://saitejababu.github.io/Tic-tac-toe_Game/
+https://saitejababu.github.io/Tic-Tac-Toe_Game/
