@@ -2,9 +2,7 @@
 
 ## Published at:
 https://saitejakalepu.github.io/Tic-Tac-Toe_Game/
-
-<img src="tic-tac-toe.gif"/>
-
+![tic-tac-toe](https://user-images.githubusercontent.com/69914580/137547016-e5ffdd84-e6d0-4598-9c31-a1b333777a39.gif)
 
 ## Commands used to publish react files in github:
 
