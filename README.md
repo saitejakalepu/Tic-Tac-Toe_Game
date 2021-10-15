@@ -1,5 +1,9 @@
 ## Tic-Tac-Toe Game using React
 
+## Published at:
+https://saitejakalepu.github.io/Tic-Tac-Toe_Game/
+
+
 ## Commands used to publish react files in github:
 
 git init
@@ -14,5 +18,4 @@ git remote add origin https://github.com/saitejababu/Tic-Tac-Toe_Game.git
 
 npm run deploy
 
-## Published at:
-https://saitejakalepu.github.io/Tic-Tac-Toe_Game/
+
